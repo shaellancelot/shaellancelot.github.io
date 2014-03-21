@@ -4,8 +4,21 @@
 	<meta charset="utf-8" />
 	<title>Metric Of Software</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" /> 
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<style type="text/css">
+#leftnav{
+	width:200px;
+	float:left;
+}
+#rightnav{
+	margin:0px 0px 0 100;
+	width:100px;
+	height:100%;
+	float:left;
+}
+</style>
+
 </head>
 <body>
 <div id="wrapper"><!-- #wrapper -->
@@ -37,21 +50,35 @@
 		
 		<div class="clearall"></div>
 		
+	<script language="JavaScript"> 
+		function test(){
+			 
+			var ele = window.event.srcElement;
+
+			_el = document.getElementById("iframe");
+			_el.src=ele;
+			_el.frameborder = 1;
+		}
+	</script> 
+
 		<article id="contentsummary">
-				<a href="files/Architecture.h">Architecture.h</a><br />
-				<a href="files/CHypergraph.h">CHypergraph.h</a><br />
-				<a href="files/CLock.h">CLock.h</a><br />
-				<a href="files/CLog.h">CLog.h</a><br />
-				<a href="files/CMgrJob.h">CMgrJob.h.h</a><br />
-				<a href="files/CThread.h">CThread.h</a><br />
-				<a href="files/define.h">define.h</a><br />
-				<a href="files/HeapSort.h">HeapSort.h</a><br />
-				<a href="files/hmetis.h">hmetis.h</a><br />
-				<a href="files/Multilevel.h">Multilevel.h</a><br />
-				<a href="files/ReadCpp.h">ReadCpp.h</a><br />
-				<a href="files/ReadH.h">ReadH.h</a><br />
-				<a href="files/resource.h">resource.h</a><br />
-				<a href="files/TestCase.h">TestCase.h</a><br />
+			 <div id=leftnav>
+				<a href="files/CLock.h" onmouseover=test() >CLock.h</a><br />
+				<a href="files/CLog.h" onmouseover=test()>CLog.h</a><br />
+				<a href="files/CMgrJob.h" onmouseover=test()>CMgrJob.h.h</a><br />
+				<a href="files/CThread.h" onmouseover=test()>CThread.h</a><br />
+				<a href="files/define.h" onmouseover=test()>define.h</a><br />
+				<a href="files/HeapSort.h" onmouseover=test()>HeapSort.h</a><br />
+				<a href="files/hmetis.h" onmouseover=test()>hmetis.h</a><br />
+				<a href="files/Multilevel.h" onmouseover=test()>Multilevel.h</a><br />
+				<a href="files/ReadCpp.h" onmouseover=test()>ReadCpp.h</a><br />
+				<a href="files/ReadH.h" onmouseover=test()>ReadH.h</a><br />
+				<a href="files/resource.h" onmouseover=test()>resource.h</a><br />
+				<a href="files/TestCase.h" onmouseover=test()>TestCase.h</a><br />
+			</div>
+			<div id=rightnav>
+			 <iframe id="iframe" width:1000 src="" scrolling=yes frameborder=0></iframe></a><br />
+			</div>
 		</article>		
 		
 		<div class="clearall"></div>
@@ -63,7 +90,6 @@
 			<p>&copy; <a href="http://www.baidu.com/">mysite.com</a></p>
 			<br />
 	</footer>
-
 </div><!-- #wrapper -->
 </body>
 </html>
